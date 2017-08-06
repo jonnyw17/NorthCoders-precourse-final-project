@@ -1,0 +1,17 @@
+body {
+  background-color: blue;
+  height:100vh;
+}
+
+.jumbo-main-header {
+  height:100vh;
+  display: flex;
+  align-items: center;
+}
+
+.choice1-javascript {
+  margin: 0 auto;
+  height:275px;
+  width: 275px;
+  background-color: #000000;
+}
