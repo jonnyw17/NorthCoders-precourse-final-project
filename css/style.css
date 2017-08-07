@@ -1,14 +1,44 @@
 body {
   background-color: blue;
-  text-shadow: 1px 3px rgba(0,0,0,.5);
   background-color: #ffffff;
-  overflow: hidden;
+  min-height: 100vh
+}
+
+/*NAVBAR*/
+.main-nav {
+  width: 100%;
+  height: 80px;
+  background: #000;
+  display: flex;
+  display: none;
+}
+
+.nav-ul {
+
+  margin: 0 auto;
+  /*width: 50%;*/
+  height: 100%;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+}
+
+.nav-list-items {
+  margin: 0 auto;
+  align-content: space-between;
+  text-align: center;
+  padding: 20px 0px;
+  margin: 5px 3px;
+  width: 250px;
+  background-color: #ffffff;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 .jumbo-main-header {
   height:100vh;
   width: 100%;
-  background-color: #333;
+  background-color: #c0c0c0;
   display: flex;
   align-items: center;
   display: -webkit-box;
@@ -18,8 +48,33 @@ body {
   align-content: space-between;
   justify-content: space-between;
   flex-flow: row wrap;
-
+  margin-bottom: 0px;
+  padding: 0px
 }
+
+.user-image{
+  padding:10px
+}
+.language-image {
+  padding: 40px;
+}
+.user-details {
+  margin: 20px;
+  height:350px;
+  width: 350px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  display: contents;
+  justify-content: space-between;
+  font-family: 'Fjalla One', sans-serif;
+  opacity: 1;
+}
+.welcome-message {
+  margin:0px;
+  padding-bottom: 10px;
+  text-align:center;
+}
+
 .choice-box {
   margin: 20px;
   height:350px;
@@ -27,16 +82,16 @@ body {
   margin: 20px auto;
   background-color: #ffffff;
   display: contents;
-  font-family: 'Anton', sans-serif;
-  opacity: 1;
-
+  justify-content: space-between;
+  font-family: 'Fjalla One', sans-serif;
+  display: none;
 }
 @media only screen and (max-width: 560px) {
     body{
       overflow: visible;
     }
     .jumbo-main-header {
-      height:100%;
+      min-height:100vh;
     }
     .choice-box{
       width: 75%;
@@ -46,11 +101,19 @@ body {
 
 .language-choice-select {
    width: 100%;
-   background-color: #000000;
+   background-color: #23297A;
    color: #ffffff;
    border-radius: 0px;
 }
-.language-choice-select:hover {
+
+.language-choice-select:hover,
+.language-choice-select:focus,
+.language-choice-select:active {
    width: 100%;
-   background-color: #111111;
+   background-color: #000080;
+   color:#ffffff;
+}
+
+.failed {
+  border: solid 1px red;
 }
