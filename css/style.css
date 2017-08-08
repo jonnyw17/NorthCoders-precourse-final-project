@@ -2,40 +2,53 @@ body {
   background-color: blue;
   background-color: #ffffff;
   min-height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  font-family: 'Fjalla One', sans-serif;
 }
-
-/*NAVBAR*/
-.main-nav {
-  width: 100%;
-  height: 80px;
-  background: #000;
-  display: flex;
-  display: none;
+ul {
+  list-style: none;
 }
-
-.nav-ul {
-  margin: 0 auto;
-  /*width: 50%;*/
-  height: 100%;
+li {
+  list-style: none;
+}
+a{
   text-decoration: none;
   list-style: none;
-  display: flex;
-  padding-left: 0px;
+  color: #fff;
+}
+a:hover {
+  text-decoration: none;
+  color: #0275d8 !important;
 }
 
-.nav-list-items {
-  margin: 0 auto;
-  align-content: space-between;
-  text-align: center;
-  padding: 20px 0px;
-  margin: 5px 3px;
-  width: 250px;
-  background-color: #ffffff;
-  font-family: 'Fjalla One', sans-serif;
+.user-login {
+  opacity: 0;
+}
+
+.home-page {
+  opacity: 0;
+}
+
+.nav-color {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
+}
+
+.jumbo-image {
+  background-image: url('../images/jumbo-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.user-image {
+  background-image: url('../images/user-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .jumbo-main-header {
   height:100vh;
+  height:-75px;
   width: 100%;
   background-color: #c0c0c0;
   display: flex;
@@ -48,6 +61,7 @@ body {
   justify-content: space-between;
   flex-flow: row wrap;
   margin-bottom: 0px;
+  margin-top: -50px;
   padding: 0px
 }
 
@@ -61,50 +75,74 @@ body {
 
 .user-details {
   margin: 20px;
-  height:350px;
+  min-height:350px;
+  max-height: 400px;
   width: 350px;
   margin: 20px auto;
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.35);
   display: contents;
   justify-content: space-between;
   font-family: 'Fjalla One', sans-serif;
   opacity: 1;
 }
+.form {
+  background-color: transparent;
+  padding:40px;
+  margin-top:10px;
+}
 
+.test {
+
+  color: #fff;
+}
 .welcome-message {
   margin:0px;
   padding-bottom: 10px;
   text-align:center;
+  color: #fff;
 }
-
+.label {
+  color: #fff;
+}
 .choice-box {
   margin: 10px;
-  height:350px;
-  width: 350px;
-  margin: 20px auto;
+  height:300px;
+  width: 300px;
+  margin: 40px auto;
   background-color: #ffffff;
   display: contents;
   justify-content: space-between;
   font-family: 'Fjalla One', sans-serif;
-  
+
 }
 
 @media only screen and (max-width: 560px) {
     body{
       overflow: visible;
     }
+
+    .language-image {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
     .jumbo-main-header {
       min-height:100vh;
+      /*padding: 10px;*/
     }
     .choice-box{
+      padding:15px;
       width: 75%;
-      height: 50%;
+      height: 100%;
+      max-height: 350px;
     }
 }
 
 .language-choice-select {
    width: 100%;
-   background-color: #23297A;
+   background-color: #000;
    color: #ffffff;
    border-radius: 0px;
 }
@@ -113,7 +151,7 @@ body {
 .language-choice-select:focus,
 .language-choice-select:active {
    width: 100%;
-   background-color: #000080;
+   background-color: #0275d8;
    color:#ffffff;
 }
 
@@ -122,4 +160,16 @@ body {
 }
 #alert {
   display: none;
+}
+
+
+.modal-signout {
+  width:100px;
+  height:50px;
+}
+.modal-title,
+.modal-text {
+  color: #000;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
 }

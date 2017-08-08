@@ -1,14 +1,16 @@
 // var _ = require('underscore');
 
+$('.user-login').fadeTo(700, 1);
+$('.home-page').fadeTo(1200, 1);
 function othername() {
-    var first = document.getElementById("firstName").value;
-    var last = document.getElementById("lastName").value;
-    var userName = `${first} ${last}`;
+    var userName = document.getElementById("userNames").value;
+    // var last = document.getElementById("lastName").value;
+    // var userName = `${first} ${last}`;
     var profileArea;
 
-    if(first.length > 2 && last.length > 2){
+    if(userName.length > 2){
 
-     document.getElementById('welcomeUser').innerHTML = "<h3>Hello " + userName ;
+    //  document.getElementById('profileName').innerHTML = '${userName}';
      $('.test').removeClass('failed');
      $('.test').removeClass('failed');
      $('#alert').css({'display' : 'none'});
