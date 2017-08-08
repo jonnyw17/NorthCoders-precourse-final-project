@@ -1,7 +1,7 @@
 body {
   background-color: blue;
   background-color: #ffffff;
-  min-height: 100vh
+  min-height: 100vh;
 }
 
 /*NAVBAR*/
@@ -14,7 +14,6 @@ body {
 }
 
 .nav-ul {
-
   margin: 0 auto;
   /*width: 50%;*/
   height: 100%;
@@ -53,11 +52,13 @@ body {
 }
 
 .user-image{
-  padding:10px
+  padding:10px;
 }
+
 .language-image {
   padding: 40px;
 }
+
 .user-details {
   margin: 20px;
   height:350px;
@@ -69,6 +70,7 @@ body {
   font-family: 'Fjalla One', sans-serif;
   opacity: 1;
 }
+
 .welcome-message {
   margin:0px;
   padding-bottom: 10px;
@@ -76,7 +78,7 @@ body {
 }
 
 .choice-box {
-  margin: 20px;
+  margin: 10px;
   height:350px;
   width: 350px;
   margin: 20px auto;
@@ -84,8 +86,9 @@ body {
   display: contents;
   justify-content: space-between;
   font-family: 'Fjalla One', sans-serif;
-  display: none;
+  
 }
+
 @media only screen and (max-width: 560px) {
     body{
       overflow: visible;
@@ -116,4 +119,7 @@ body {
 
 .failed {
   border: solid 1px red;
+}
+#alert {
+  display: none;
 }
