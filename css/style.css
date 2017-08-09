@@ -116,6 +116,23 @@ a:hover {
 
 }
 
+.nav-profile-buttons {
+  color:#fff !important;
+  line-height:3 !important;
+  padding: 5px 15px !important;
+  /*margin-left: 5px !important;*/
+  margin-right: 70px !important;
+  align-items: center !important;
+}
+.nav-signout-buttons {
+  color:#fff !important;
+  line-height:3 !important;
+  padding: 0px 15px !important;
+  /*margin-left: 5px !important;*/
+  margin-right: 5px !important;
+  align-items: center !important;
+}
+
 @media only screen and (max-width: 560px) {
     body{
       overflow: visible;
@@ -128,6 +145,18 @@ a:hover {
       padding-bottom: 0px;
     }
 
+    .navbar-brand{
+      margin-left:0px !important;
+      text-align: center !important;
+    }
+    .navbar {
+      margin-bottom: 40px;
+    }
+
+    .profile-button{
+      margin-right:0px;
+      margin: 0 auto;
+    }
     .jumbo-main-header {
       min-height:100vh;
       /*padding: 10px;*/

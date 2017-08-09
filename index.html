@@ -27,25 +27,28 @@
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a style="margin-left:70px;"class="navbar-brand" href="#">Navbar</a>
+  <a style="margin-left:70px;"class="navbar-brand" href="index.html">
+    <p id="blahblah" style="padding-bottom:0px;margin-bottom:0px;line-height:2.5">
+    </p>
+  </a>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto" style="text-align: center">
-      <li class="nav-item active" style="margin: 0px 30px !important">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item active" style="line-height: 3;font-size: 20px;margin: 0px 30px !important">
+
       </li>
-      <li class="nav-item" style="margin: 0px 30px !important">
-        <a class="nav-link" href="#">Language Select</a>
-      </li>
+
     </ul>
-    <li class="nav-item" style="font-size: 25px;margin: 0px 30px !important" id="TotalScore">
-      Total score: 0
+    <li class="nav-item" style="font-size: 25px;margin: 0px 30px !important">
+      <p style="padding-bottom:0px;margin-bottom:0px;line-height:2.5">
+        Total score: 0
+      </p>
     </li>
-      <a href="userlogin.html"><button style="color:#fff; padding: 10px 40px;margin-right: 70px" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Profile</button></a>
+    <button data-toggle="modal" data-target="#myModal" class="nav-signout-buttons btn btn-outline-primary my-2 my-sm-0" type="button">Sign out</button>
+      <a href="profile.html"><button class="nav-profile-buttons btn btn-primary my-2 my-sm-0" type="submit">Profile</button></a>
 
   </div>
 </nav>
-
   <div class="jumbotron jumbo-main-header jumbo-image" id="test">
       <div class="choice-box language-choice-html">
         <img src="images/html-logo.jpg" class="img-responsive language-image" id="html" width="100%"  alt="html logo">

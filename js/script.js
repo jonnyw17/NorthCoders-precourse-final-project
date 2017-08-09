@@ -1,37 +1,44 @@
-// var _ = require('underscore');
-
 $('.user-login').fadeTo(700, 1);
 $('.home-page').fadeTo(1200, 1);
+
+var user;
+
 function othername() {
-    var userName = document.getElementById("userNames").value;
+   user = document.getElementById("userNames").value;
+   localStorage.setItem("user", user);
+
     // var last = document.getElementById("lastName").value;
     // var userName = `${first} ${last}`;
-    var profileArea;
+    var logInSuccess;
 
-    if(userName.length > 2){
-
-    //  document.getElementById('profileName').innerHTML = '${userName}';
+    if(user.length > 2){
      $('.test').removeClass('failed');
      $('.test').removeClass('failed');
      $('#alert').css({'display' : 'none'});
      $('#welcomeUser').css({'display' : 'inline', "text-align" : 'center'})
-     profileArea = true;
+     logInSuccess = true;
 
    }else {
 
-    //  document.getElementById('welcomeUser').innerHTML = "Please enter First and Last name";
      $('#alert').fadeTo(500,1);
      $('#welcomeUser').css({'display' : 'none'});
      $('.test').addClass('failed');
      $('.test').addClass('failed');
-     profileArea = false;
+     logInSuccess = false;
    }
-    if(profileArea === true){
+    if(logInSuccess === true){
       $('.user-details').fadeOut(900, function (){
         $(location).attr('href', 'index.html')
     });
   }
+
 }
+
+if(window.location.pathname === '/Users/forwardmarketing/Desktop/NorthCoders-precourse-final-project/index.html'){
+  user = localStorage.getItem('user');
+  document.getElementById('blahblah').innerHTML = 'Welcome Back ' + user;
+}
+
 //html button
 $('#button-html').mouseenter(function(){
   $('.language-choice-css').fadeTo(300, 0.3)
